@@ -54,7 +54,24 @@ Por otro lado, si queremos agregar un color diferente a nuestra Barra de Navegac
 
 ```style: 'dark',```
 
-![prueba](http://i.imgur.com/OUkLi.gif)
+* ## Agregar un AVISO.
+
+Para agregar un aviso que se ponga en la parte superior de la Barra de Navegación, puedes utilizar el siguiente código fuente. El cual debes de ubicarlo encima de la directiva **footer**
+
+```
+announcementBar: {
+  id: 'Aviso', // Any value that will identify this message.
+  content:
+    'Tutorial Avanzado sobre Docusaurus <a target="_blank" rel="noopener noreferrer" href="">Ir al Repositorio</a>',
+  backgroundColor: '#fafbfc', // Defaults to `#fff`.
+  textColor: '#091E42', // Defaults to `#000`.
+  isCloseable: false, // Defaults to `true`.
+  
+```
+
+
+
+
 
   
   
