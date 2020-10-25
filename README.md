@@ -40,7 +40,22 @@ Docusaurus trabaja con Hojas de Estilos conocidas como CSS, las cuales son imple
 2. Modificamos el color que se encuentra en ```--ifm-color-primary:``` por cualquier otro código. Es importante destacar que **Infima** trabaja con dos parámetros importantes para las hojas de estilo; el primero es el **primary** y el segundo es el **dark**. Por lo tanto, ambos parámetros pueden ser cambiados para personalizar nuestro sitio.
 
 * ## Modificando la Barra de Navegación.
-  ### Agreguemos nuevos elementos
+
+Para agregar nuevas secciones dentro de nuestra Barra de Navegación debemos de seguir los siguientes pasos:
+
+1. Ubicar el archivo llamado **docusaurus.config.js**
+2. Agregamos el siguiente código dentro de **items**
+
+Si queremos ocultar la Barra de Navegación cuando el usuario se desplace por nuestra Página Principal hacia abajo, podemos agregar la siguiente instruccion dentro de nuestro archivo **docusaurus.config.js**
+
+```hideOnScroll: true,```
+
+Por otro lado, si queremos agregar un color diferente a nuestra Barra de Navegación, se puede hacer agregando la siguiente línea de código fuente
+
+```style: 'dark',```
+
+![prueba](http://i.imgur.com/OUkLi.gif)
+
   
   
 
