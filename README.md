@@ -32,29 +32,26 @@ IMPORTANTE: El titulo que agreguemos, es el que se pondra en la ventana de naveg
 
 3. Agregamos una imagen de formato **.ico**. Para esto debemos de reemplazar la imagen que se encuentra en la ruta **/static/img/favicon.ico**
 
-* ## Agregando un nuevo color a nuestra página principal.
+* ## Agregando un nuevo color a nuestra página principal.🎆
 
 Docusaurus trabaja con Hojas de Estilos conocidas como CSS, las cuales son implementadas en la plantilla que tenemos por defecto. Ademas, utiliza **Infima** que es un marco de estilo moderno para sitios web basados en contenido. Para cambiar el color principal de nuestra pagina principal hacemos lo siguiente:
 
 1. Ubicar el archivo **custom.css** que se encuentra en la ruta **src/css/custom.css**
 2. Modificamos el color que se encuentra en ```--ifm-color-primary:``` por cualquier otro código. Es importante destacar que **Infima** trabaja con dos parámetros importantes para las hojas de estilo; el primero es el **primary** y el segundo es el **dark**. Por lo tanto, ambos parámetros pueden ser cambiados para personalizar nuestro sitio.
 
-* ## Modificando la Barra de Navegación.
+* ## Modificando la Barra de Navegación.📌
 
 Para agregar nuevas secciones dentro de nuestra Barra de Navegación debemos de seguir los siguientes pasos:
 
 1. Ubicar el archivo llamado **docusaurus.config.js**
 2. Agregamos el siguiente código dentro de **items**
 
-Si queremos ocultar la Barra de Navegación cuando el usuario se desplace por nuestra Página Principal hacia abajo, podemos agregar la siguiente instruccion dentro de nuestro archivo **docusaurus.config.js**
+* ### PRO-TIPS:
+* Si queremos ocultar la Barra de Navegación cuando el usuario se desplace por nuestra Página Principal hacia abajo, podemos agregar la siguiente instruccion dentro de nuestro archivo **docusaurus.config.js** ```hideOnScroll: true,```
 
-```hideOnScroll: true,```
+* Por otro lado, si queremos agregar un color diferente a nuestra Barra de Navegación, se puede hacer agregando la siguiente línea de código fuente ```style: 'dark',```
 
-Por otro lado, si queremos agregar un color diferente a nuestra Barra de Navegación, se puede hacer agregando la siguiente línea de código fuente
-
-```style: 'dark',```
-
-* ## Agregar un AVISO.
+* ## Agregar un AVISO. 📢
 
 Para agregar un aviso que se ponga en la parte superior de la Barra de Navegación, puedes utilizar el siguiente código fuente. El cual debes de ubicarlo encima de la directiva **footer**
 
@@ -62,7 +59,7 @@ Para agregar un aviso que se ponga en la parte superior de la Barra de Navegaci�
 announcementBar: {
   id: 'Aviso', // Any value that will identify this message.
   content:
-    'Tutorial Avanzado sobre Docusaurus <a target="_blank" rel="noopener noreferrer" href="">Ir al Repositorio</a>',
+    'Tutorial Avanzado sobre Docusaurus Versión 2 ya disponible! <a target="_blank" href="https://github.com/dochavez/personalizando-docusaurusV2">Ir al Repositorio</a>',
   backgroundColor: '#fafbfc', // Defaults to `#fff`.
   textColor: '#091E42', // Defaults to `#000`.
   isCloseable: false, // Defaults to `true`.
