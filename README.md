@@ -34,6 +34,13 @@ IMPORTANTE: El titulo que agreguemos, es el que se pondra en la ventana de naveg
 
 * ## Agregando un nuevo color a nuestra página principal.
 
-Docusaurus trabaja con un 
+Docusaurus trabaja con Hojas de Estilos conocidas como CSS, las cuales son implementadas en la plantilla que tenemos por defecto. Ademas, utiliza **Infima** que es un marco de estilo moderno para sitios web basados en contenido. Para cambiar el color principal de nuestra pagina principal hacemos lo siguiente:
+
+1. Ubicar el archivo **custom.css** que se encuentra en la ruta **src/css/custom.css**
+2. Modificamos el color que se encuentra en ```--ifm-color-primary:``` por cualquier otro código. Es importante destacar que **Infima** trabaja con dos parámetros importantes para las hojas de estilo; el primero es el **primary** y el segundo es el **dark**. Por lo tanto, ambos parámetros pueden ser cambiados para personalizar nuestro sitio.
+
+* ## Modificando la Barra de Navegación.
+
+
 
 
