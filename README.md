@@ -147,7 +147,6 @@ Todo el contenido que mira el usuario cuando accede a nuestra página principal 
       </>
     ),
   },
-
   {
     title: 'Para mostrar amor',
     imageUrl: 'img/undraw_love_xfcv.svg',
@@ -161,8 +160,50 @@ Todo el contenido que mira el usuario cuando accede a nuestra página principal 
 ```
 ![index](https://github.com/dochavez/personalizando-docusaurusV2/blob/main/cambiando%20el%20index.jpg)
 
+* ## Documentos.🖺
 
+Para crear un documento que nos aparezca en nuestro sitio web debemos de seguir los siguientes pasos:
+
+1. Crear un archivo con extensión **.md** dentro de la carpeta **docs**
+2. Agregamos las siguientes directivas: 
+```
+---
+id: doc4
+title: La Historía del Chocolate
+---
+AGREGAR TU CONTENIDO AQUI
+```
+3. Luego, debes de agregar el título de la categoría en el archivo **sidebar.js**
+```
+'El Chocolate': ['doc4', 'doc5' ],
+```
+Para agregar multiples pestañas dentro de nuestro documento, solo debemos de agregar el siguiente código:
+
+```
+<Tabs
+  defaultValue="apple"
+  values={[
+    {label: 'Periodo Maya' , value: 'maya'},
+    {label: 'Periodo Azteca', value: 'azteca'},
+    {label: 'Periodo Europeo', value: 'europeo'},
+  ]}>
+
+  <TabItem value="maya">
+  El pueblo maya, cuyo origen se remonta cada vez más atrás con cada avance en los estudios arqueológicos, ha dejado descripciones en forma de jeroglíficos que conforman la denominada escritura maya.  
+  </TabItem>
+    
+  <TabItem value="azteca">
+  El origen de la palabra cacao y chocolate es hoy en día una controversia entre los científicos estudiosos del término.
+  </TabItem>
   
+  <TabItem value="europeo">
+  El descubrimiento del cacao tuvo varios episodios iniciales de contacto entre los conquistadores españoles, y los pueblos mesoamericanos.
+  </TabItem>
+  
+</Tabs>
+
+```
+
   
 
 
