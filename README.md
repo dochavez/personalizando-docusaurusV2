@@ -68,6 +68,9 @@ Para agregar nuevas secciones dentro de nuestra Barra de Navegación debemos de 
       position: 'right'
     },
 ```
+
+![Barra de Navegacion](https://github.com/dochavez/personalizando-docusaurusV2/blob/main/Barra%20de%20Navegacion.jpg)     
+     
      
 * ### PRO-TIPS: 😉
 * Si queremos ocultar la Barra de Navegación cuando el usuario se desplace por nuestra Página Principal hacia abajo, podemos agregar la siguiente instruccion dentro de nuestro archivo **docusaurus.config.js** ```hideOnScroll: true,```
@@ -88,6 +91,8 @@ announcementBar: {
   isCloseable: false, // Defaults to `true`.
   
 ```
+![AVISO](https://github.com/dochavez/personalizando-docusaurusV2/blob/main/Agregando%20anuncio.jpg)
+
 
 * ## Modificando nuestra Página Principal.🏗
 
@@ -154,7 +159,7 @@ Todo el contenido que mira el usuario cuando accede a nuestra página principal 
     ),
   },
 ```
-
+![index](https://github.com/dochavez/personalizando-docusaurusV2/blob/main/cambiando%20el%20index.jpg)
 
 
   
