@@ -1,4 +1,4 @@
-# Personalizando-DocusaurusV2. 
+#  👨🏼‍💻Personalizando-DocusaurusV2. 👨🏼‍💻 
 ## Tutorial Avanzado.
 ### Autor: Danny Chávez <br>
 
@@ -16,7 +16,7 @@ Docusaurus es un generador de sitios estáticos de código abierto que convierte
 
 Si eres nuevo y quieres saber como se realiza el proceso de ***instalación, configuración y despliegue*** de tu sitio web de forma local y en línea, te invito a que mires este <a href="https://github.com/dochavez/DocusaurusV2" target="_blank">**tutorial**</a> donde te mostrare paso a paso lo que debe de realizar para que puedas probar esta poderosa y fácil herramienta. 
 
-* ## Agregando un Título, lema e icono para el navegador.
+* ## Agregando un Título, lema e icono para el navegador.🏡
 
 Cuando se instala Docusauru por primera vez, nos muestra una plantilla por defecto. La cual se ejecuta en la dirección **http://localhost:3000**. Esta plantilla contiene 3 elementos importantes:
 - **Barra de Navegación:** la cual se encuentra en la parte superior de la plantilla.
@@ -46,7 +46,30 @@ Para agregar nuevas secciones dentro de nuestra Barra de Navegación debemos de 
 1. Ubicar el archivo llamado **docusaurus.config.js**
 2. Agregamos el siguiente código dentro de **items**
 
-* ### PRO-TIPS:
+```
+   {
+      label: 'Facebook',
+      href: 'https://www.facebook.com',
+      position: 'left' // también se puede ubicar a la derecha con el valor "right"
+    },
+      {
+      label: 'Twitter',
+      href: 'https://www.twitter.com',
+      position: 'left',  
+    },
+    {
+      label: 'Instagram',
+      href: 'https://www.instagram.com',
+      position: 'right',
+    },
+    {
+      label: 'Whatsapp',
+      href: 'https://www.whatsapp.com/',
+      position: 'right'
+    },
+```
+     
+* ### PRO-TIPS: 😉
 * Si queremos ocultar la Barra de Navegación cuando el usuario se desplace por nuestra Página Principal hacia abajo, podemos agregar la siguiente instruccion dentro de nuestro archivo **docusaurus.config.js** ```hideOnScroll: true,```
 
 * Por otro lado, si queremos agregar un color diferente a nuestra Barra de Navegación, se puede hacer agregando la siguiente línea de código fuente ```style: 'dark',```
@@ -66,7 +89,71 @@ announcementBar: {
   
 ```
 
+* ## Modificando nuestra Página Principal.🏗
 
+Todo el contenido que mira el usuario cuando accede a nuestra página principal es por medio del archivo **index.js**. Por lo tanto, vamos a cambiar las imagenes y agregar más secciones a la misma. Para eso agregamos el siguiente código fuente debajo de **const features**:
+
+```
+{
+    title: 'Es saludable!',
+    imageUrl: 'img/undraw_healthy_options_sdo3.svg',
+    description: (
+      <>
+        Alivia el estrés y es un antidepresivo natural.
+      </>
+    ),
+  },
+  {
+    title: 'Una bebida relajante',
+    imageUrl: 'img/undraw_coffee_break_j3of.svg',
+    description: (
+      <>
+        El chocolate es una fuente de energia capaz de mejorar el estado de ánimo. 
+        Contiene cafeína y es capaz de aumentar su resistencia al cansancio.
+      </>
+    ),
+  },
+  {
+    title: 'Reuniones de Amigo',
+    imageUrl: 'img/undraw_hang_out_h9ud.svg',
+    description: (
+      <>
+        Reune a tus amigos con toda la tarde por delante para una buena selección
+        de juegos de mesa o videojuegos, según las preferencias.
+      </>
+      
+    ),
+  },
+  {
+    title: 'Refresca tu cuerpo',
+    imageUrl: 'img/undraw_hot_beverage_2vw3.svg',
+    description: (
+      <>
+        Una buena bebida para pasar un excelente día!
+      </>
+    ),
+  },
+  {
+    title: 'Supermercados y Tiendas',
+    imageUrl: 'img/undraw_shopping_app_flsj.svg',
+    description: (
+      <>
+        Lo puedes obtener en cualquier supermercado y tienda de conveniencia.
+      </>
+    ),
+  },
+
+  {
+    title: 'Para mostrar amor',
+    imageUrl: 'img/undraw_love_xfcv.svg',
+    description: (
+      <>
+        El chocolate inclusive a sido usado para expresar nuestros sentimientos
+        por nuestra persona favorita. :)
+      </>
+    ),
+  },
+```
 
 
 
