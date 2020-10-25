@@ -19,9 +19,9 @@ Si eres nuevo y quieres saber como se realiza el proceso de ***instalación, con
 * ## Agregando un Título, lema e icono para el navegador.
 
 Cuando se instala Docusauru por primera vez, nos muestra una plantilla por defecto. La cual se ejecuta en la dirección **http://localhost:3000**. Esta plantilla contiene 3 elementos importantes:
-- Barra de Navegación: la cual se encuentra en la parte superior de la plantilla.
-- Contenido Principal: donde se agrega toda la información que el usuario observará.
-- Pie de Página: la cual se encuentra en la parte final de la página.
+- **Barra de Navegación:** la cual se encuentra en la parte superior de la plantilla.
+- **Contenido Principal:** donde se agrega toda la información que el usuario observará.
+- **Pie de Página:** la cual se encuentra en la parte final de la página.
 
 Para agregar un titulo a nuestra plantilla, debemos de hacer lo siguiente:
 
@@ -40,6 +40,9 @@ Docusaurus trabaja con Hojas de Estilos conocidas como CSS, las cuales son imple
 2. Modificamos el color que se encuentra en ```--ifm-color-primary:``` por cualquier otro código. Es importante destacar que **Infima** trabaja con dos parámetros importantes para las hojas de estilo; el primero es el **primary** y el segundo es el **dark**. Por lo tanto, ambos parámetros pueden ser cambiados para personalizar nuestro sitio.
 
 * ## Modificando la Barra de Navegación.
+  ### Agreguemos nuevos elementos
+  
+  
 
 
 
