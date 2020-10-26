@@ -233,7 +233,7 @@ Eliminar archivos del sistema no es recomendable!
 :::
 ```
 
-* ## Agregas bloques para mostrar nuestro código fuente.
+* ## Agregas bloques para mostrar nuestro código fuente.🪟
 
 Recuerda que una de las caracteristicas principales de Docusaurus es poder compartir información de forma ordenada. Por lo tanto, si estas trabajando en algun proyecto que incluya una actualización de código fuente, puedes agregar **bloques** adentro de tus documentos para que muestren la información que deseas compartir. Para esto solo debes de agregar el siguiente código dentro de nuestros archivos **.md** en donde puedes sustituir el valor del titulo que se encuentra en la directiva ```jsx title="Poner tu título aquí"```:
 
@@ -243,7 +243,50 @@ function HelloCodeTitle(props) {
   return <h1>Hello, {props.name}</h1>;
 }
 ```
-Otra interesante propiedad de los bloques es que podemos agregar un código fuente y dentro del mismo podemos resaltar una o varias líneas de código por si queremos hacer énfasis en 
+Otra interesante propiedad de los bloques es que podemos agregar un código fuente y dentro del mismo podemos resaltar una o varias líneas de código por si queremos hacer énfasis en que hemos realizado alguna modificación en una función especifica o hacer referencia a algun tópico que estemos abordando. Por ejemplo, agrega el siguiente código dentro de tu archivo **.md** y notaras como algunas líneas son resaltadas.
+
+```jsx {3}
+function HighlightSomeText(highlight) {
+  if (highlight) {
+    return 'This text is highlighted!';
+  }
+
+  return 'Nothing highlighted';
+}
+```
+
+* ## Incorporando imagenes en nuestros documentos.📸
+
+A veces una imagen puede reflejar muchas palabras que deseamos expresar, es por eso que con Markdown podemos incluir imagenes dentro de nuestro documento. Simplemente agregamos la siguiente línea de comando. 
+
+```
+# Mi doc5
+
+<img src={require('./assets/docusaurus-asset-example-banner.png').default} />
+
+or
+
+![](./assets/docusaurus-asset-example-banner.png)
+```
+
+* ## Incorporando archivos de descarga en nuestros documentos. 📂
+
+De la misma manera que hicimos con el apartado anterior, también podemos poner a disposición enlaces de descargas para nuestros usuarios. Estos enlaces nos pueden llevar a descargar videos, audios, documentos en pdf, etc. Para hacer esto, podemos agregar la siguiente linea de comando dentro de nuestro archivo en el cual estamos editando nuestro documento.
+
+```
+# Mi doc5
+
+<a
+  target="_blank"
+  href={require('./assets/docusauru_github.pdf').default}>
+  Descargar documento PDF
+</a>
+
+or
+
+[Descargar documento PDF](./assets/docusauru_github.pdf)
+
+```
 
 
 
