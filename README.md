@@ -287,7 +287,41 @@ or
 [Descargar documento PDF](./assets/docusauru_github.pdf)
 
 ```
+* ## Es hora de crear Blogs. 💪
 
+Si ya llegastes hasta esta sección del tutorial, quiero decirte que estas poniendo tu máximo esfuerzo para alcanzar tus logros. Es por eso que ahora vamos a ver la parte de crear Blogs que van a estar en nuestro sitio web. Por definición podemos decir que un **Blog o bitácora** es *es un sitio web que incluye, a modo de diario personal de su autor o autores, contenidos de su interés, que suelen estar actualizados con frecuencia y a menudo son comentados por los lectores*. Por lo tanto, para poder crear **Blogs** podemos incorporar el siguiente código fuente:
+
+```
+---
+title: Docusaurus Avanzado
+author: Danny Chavez
+author_title: Autor del Tutorial
+author_url: https://github.com/dochavez
+author_image_url: https://graph.facebook.com/611217057/picture/?height=200&width=200
+tags: [persona, docusaurus-v2]
+description: Blog personal.
+image: https://i.imgur.com/mErPwqL.png
+hide_table_of_contents: false
+---
+Este es mi tutorial sobre Docusaurus. Cubriremos aspectos avanzados.
+
+```
+
+Donde:
+
+- **autor:** el nombre del autor que se mostrará.
+- **author_url:** la URL a la que se vinculará el nombre del autor. Esto podría ser una URL de perfil de GitHub, Twitter, Facebook, etc.
+- **author_image_url:** la URL de la imagen en miniatura del autor.
+- **author_title:** una descripción del autor.
+- **title:** el título de la publicación del blog.
+- **etiquetas:** una lista de cadenas para etiquetar en su publicación.
+- **borrador:** una marca booleana para indicar que la publicación del blog está en progreso y, por lo tanto, aún no debe publicarse. Sin embargo, los borradores de las publicaciones del blog se mostrarán durante el desarrollo.
+    descripción: la descripción de tu publicación, que se convertirá en <meta name = "description" content = "..." /> y <meta property = "og: description" content = "..." /> en <head >, utilizado por los motores de búsqueda. Si este campo no está presente, estará predeterminado en la primera línea del contenido.
+- **imagen:** imagen de portada o miniatura que se utilizará al mostrar el enlace a su publicación.
+- **hide_table_of_contents:** si ocultar la tabla de contenido a la derecha. Por defecto es falso.
+
+
+Es imporntante destacar que para publicar en el blog, cree un archivo dentro del directorio del blog con un nombre formateado de YYYY-MM-DD-my-blog-post-title.md. La fecha de publicación se extrae del nombre del archivo.
 
 
 
