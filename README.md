@@ -179,6 +179,8 @@ AGREGAR TU CONTENIDO AQUI
 ```
 'El Chocolate': ['doc4', 'doc5' ],
 ```
+
+* ## Pestañas dentro de nuestro documento. 📑
 Para agregar multiples pestañas dentro de nuestro documento, solo debemos de agregar el siguiente código:
 
 ```
@@ -205,7 +207,9 @@ Para agregar multiples pestañas dentro de nuestro documento, solo debemos de ag
 </Tabs>
 
 ```
-También, en los documentos podemos crear una serie de mensajes o llamadas que pueden servir como referencia para el usuario en cuanto al tipo de información que deseamos mostrar. Para eso, podemos agregar el siguiente código dentro de nuestro archivo **.md**
+* ## Agrengando mensajes en nuestro documento.💬
+
+También, en los documentos podemos crear una serie de **mensajes o llamadas** que pueden servir como referencia para el usuario en cuanto al tipo de información que deseamos mostrar. Para eso, podemos agregar el siguiente código dentro de nuestro archivo **.md**
 
 ```
 :::note Nota
@@ -228,14 +232,18 @@ Presta atención a esto que es muy importante!
 Eliminar archivos del sistema no es recomendable!
 :::
 ```
-Recuerda que una de las caracteristicas principales de Docusaurus es poder compartir información de forma ordenada. Por lo tanto, si estas trabajando en algun proyecto que incluya una actualización de código fuente, puedes agregar **bloques** adentro de tus documentos para que muestren la información que deseas compartir. Para esto solo debes de agregar el siguiente código en donde puedes sustituir su valor:
+
+* ## Agregas bloques para mostrar nuestro código fuente.
+
+Recuerda que una de las caracteristicas principales de Docusaurus es poder compartir información de forma ordenada. Por lo tanto, si estas trabajando en algun proyecto que incluya una actualización de código fuente, puedes agregar **bloques** adentro de tus documentos para que muestren la información que deseas compartir. Para esto solo debes de agregar el siguiente código dentro de nuestros archivos **.md** en donde puedes sustituir el valor del titulo que se encuentra en la directiva ```jsx title="Poner tu título aquí"```:
 
 ```jsx title="Nueva funcion en HelloCodeTitle.js"
+
 function HelloCodeTitle(props) {
   return <h1>Hello, {props.name}</h1>;
 }
 ```
-
+Otra interesante propiedad de los bloques es que podemos agregar un código fuente y dentro del mismo podemos resaltar una o varias líneas de código por si queremos hacer énfasis en 
 
 
 
