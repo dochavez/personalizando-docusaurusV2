@@ -321,7 +321,12 @@ Donde:
 - **hide_table_of_contents:** si ocultar la tabla de contenido a la derecha. Por defecto es falso.
 
 
-Es imporntante destacar que para publicar en el blog, cree un archivo dentro del directorio del blog con un nombre formateado de YYYY-MM-DD-my-blog-post-title.md. La fecha de publicación se extrae del nombre del archivo.
+Es importante destacar que para publicar en el blog, es necesario crea un archivo dentro del directorio del blog con un nombre formateado de **YYYY-MM-DD-my-blog-post-title.md.** Aqui, podemos destacar que la fecha de publicación se extrae del nombre del archivo. Y esta será visible en la sección donde se publique el blogs que se esta creado.
+
+* ### PRO-TIPS: 😉
+
+Para dividir la información que será publicada en en Blogs podemos usar la etiqueta ```<!--truncate-->```
+
 
 
 
