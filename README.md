@@ -160,6 +160,8 @@ Todo el contenido que mira el usuario cuando accede a nuestra página principal 
 ```
 ![index](https://github.com/dochavez/personalizando-docusaurusV2/blob/main/cambiando%20el%20index.jpg)
 
+IMPORTANTE: Recuerda que todas estas imagnes que hemos puesto en nuestra página principal deben de estar adentro de nuestra carpeta **/img** que se encuentra en la ruta de nuestro proyecto **/static/img**
+
 * ## Documentos.🖺
 
 Para crear un documento que nos aparezca en nuestro sitio web debemos de seguir los siguientes pasos:
@@ -203,6 +205,43 @@ Para agregar multiples pestañas dentro de nuestro documento, solo debemos de ag
 </Tabs>
 
 ```
+También, en los documentos podemos crear una serie de mensajes o llamadas que pueden servir como referencia para el usuario en cuanto al tipo de información que deseamos mostrar. Para eso, podemos agregar el siguiente código dentro de nuestro archivo **.md**
+
+```
+:::note Nota
+El contenido y el titutlo puede incluir markdown.
+:::
+
+:::tip Consejo
+Aquí hay un útil consejo que te ayudará a desarrollar tu proyecto
+:::
+
+:::info Información
+Información muy relevante y actualizada.
+:::
+
+:::caution Advertencia
+Presta atención a esto que es muy importante!
+:::
+
+:::danger Peligro
+Eliminar archivos del sistema no es recomendable!
+:::
+```
+Recuerda que una de las caracteristicas principales de Docusaurus es poder compartir información de forma ordenada. Por lo tanto, si estas trabajando en algun proyecto que incluya una actualización de código fuente, puedes agregar **bloques** adentro de tus documentos para que muestren la información que deseas compartir. Para esto solo debes de agregar el siguiente código en donde puedes sustituir su valor:
+
+```jsx title="Nueva funcion en HelloCodeTitle.js"
+function HelloCodeTitle(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+```
+
+
+
+
+
+
+
 
   
 
